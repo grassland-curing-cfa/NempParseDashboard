@@ -7,58 +7,58 @@ var path = require('path');
 var dashboard = new ParseDashboard({
   apps: [
     {
-      "appId": process.env.APP_ID || 'myAppId',
-      "masterKey": process.env.MASTER_KEY || 'myMasterKey',
-      "serverURL": process.env.SERVER_URL || 'http://localhost:1337/parse',
-      "appName": process.env.APP_NAME || 'MyApp',
+      "appId": process.env.APP_ID || '',
+      "masterKey": process.env.MASTER_KEY || '',
+      "serverURL": process.env.SERVER_URL || '',
+      "appName": process.env.APP_NAME || ''
     },
     {
-      appId: process.env.APP_ID1 || 'myAppId',
-      masterKey: process.env.MASTER_KEY1 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL1 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME1 || 'MyApp',
+      appId: process.env.APP_ID1 || '',
+      masterKey: process.env.MASTER_KEY1 || '',
+      serverURL: process.env.SERVER_URL1 || '',
+      appName: process.env.APP_NAME1 || ''
     },
     {
-      appId: process.env.APP_ID2 || 'myAppId',
-      masterKey: process.env.MASTER_KEY2 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL2 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME2 || 'MyApp',
+      appId: process.env.APP_ID2 || '',
+      masterKey: process.env.MASTER_KEY2 || '',
+      serverURL: process.env.SERVER_URL2 || '',
+      appName: process.env.APP_NAME2 || ''
     },
     {
-      appId: process.env.APP_ID3 || 'myAppId',
-      masterKey: process.env.MASTER_KEY3 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL3 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME3 || 'MyApp',
+      appId: process.env.APP_ID3 || '',
+      masterKey: process.env.MASTER_KEY3 || '',
+      serverURL: process.env.SERVER_URL3 || '',
+      appName: process.env.APP_NAME3 || ''
     },
     {
-      appId: process.env.APP_ID4 || 'myAppId',
-      masterKey: process.env.MASTER_KEY4 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL4 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME4 || 'MyApp',
+      appId: process.env.APP_ID4 || '',
+      masterKey: process.env.MASTER_KEY4 || '',
+      serverURL: process.env.SERVER_URL4 || '',
+      appName: process.env.APP_NAME4 || ''
     },
     {
-      appId: process.env.APP_ID5 || 'myAppId',
-      masterKey: process.env.MASTER_KEY5 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL5 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME5 || 'MyApp',
+      appId: process.env.APP_ID5 || '',
+      masterKey: process.env.MASTER_KEY5 || '',
+      serverURL: process.env.SERVER_URL5 || '',
+      appName: process.env.APP_NAME5 || ''
     },
     {
-      appId: process.env.APP_ID6 || 'myAppId',
-      masterKey: process.env.MASTER_KEY6 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL6 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME6 || 'MyApp',
+      appId: process.env.APP_ID6 || '',
+      masterKey: process.env.MASTER_KEY6 || '',
+      serverURL: process.env.SERVER_URL6 || '',
+      appName: process.env.APP_NAME6 || ''
     },
     {
-      appId: process.env.APP_ID7 || 'myAppId',
-      masterKey: process.env.MASTER_KEY7 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL7 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME7 || 'MyApp',
+      appId: process.env.APP_ID7 || '',
+      masterKey: process.env.MASTER_KEY7 || '',
+      serverURL: process.env.SERVER_URL7 || '',
+      appName: process.env.APP_NAME7 || ''
     },
     {
-      appId: process.env.APP_ID8 || 'myAppId',
-      masterKey: process.env.MASTER_KEY8 || 'myMasterKey',
-      serverURL: process.env.SERVER_URL8 || 'http://localhost:1337/parse',
-      appName: process.env.APP_NAME8 || 'MyApp',
+      appId: process.env.APP_ID8 || '',
+      masterKey: process.env.MASTER_KEY8 || '',
+      serverURL: process.env.SERVER_URL8 || '',
+      appName: process.env.APP_NAME8 || ''
     }
   ],
   "users": [
