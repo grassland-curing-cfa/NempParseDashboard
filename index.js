@@ -4,7 +4,36 @@ var express = require('express');
 var ParseDashboard = require('parse-dashboard');
 var path = require('path');
 
+var myApps = [];
+var appIds = [];
+var masterKeys = [];
+var serverURLs = [];
+var appNames = [];
+
+var re = /\s*;\s*/;
+appIds = process.env.APP_ID_List.split(re);
+masterKeys = process.env.MASTER_KEY_List.split(re);
+serverURLs = process.env.SERVER_URL_List.split(re);
+appNames = process.env.APP_NAME_List.split(re);
+
+for ( var i = 0; i < appIds.length; i++ ) {
+  var appId = appIds[i];
+  var masterKey = masterKeys[i];
+  var serverURL = serverURLs[i];
+  var appName = appNames[i];
+
+  var this_app = {
+    "appId": appId || '',
+    "masterKey": masterKey || '',
+    "serverURL": serverURL || '',
+    "appName": appName || ''
+  };
+
+  myApps.push(this_app);
+}
+
 var dashboard = new ParseDashboard({
+  /*
   apps: [
     {
       "appId": process.env.APP_ID || '',
@@ -13,6 +42,8 @@ var dashboard = new ParseDashboard({
       "appName": process.env.APP_NAME || ''
     }
   ],
+  */
+  "apps": myApps,
   "users": [
     {
       "user": process.env.USER || 'user',
