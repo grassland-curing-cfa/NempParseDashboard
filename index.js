@@ -11,8 +11,8 @@ var dashboard = new ParseDashboard({
       masterKey: process.env.MASTER_KEY || 'myMasterKey',
       serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',
       appName: process.env.APP_NAME || 'MyApp',
-    },
-  ],
+    }
+  ]
 });
 
 var app = express();
