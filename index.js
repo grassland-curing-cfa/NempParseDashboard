@@ -7,31 +7,29 @@ var path = require('path');
 var myApps = [];
 var appIds = [];
 var masterKeys = [];
+var jsKeys = [];
 var serverURLs = [];
 var appNames = [];
-
-var javascriptKey;
 
 var re = /\s*;\s*/;
 appIds = process.env.APP_ID_List.split(re);
 masterKeys = process.env.MASTER_KEY_List.split(re);
+jsKeys = process.env.JAVASCRIPT_KEY_List.split(re);
 serverURLs = process.env.SERVER_URL_List.split(re);
 appNames = process.env.APP_NAME_List.split(re);
-
-javascriptKey = process.env.JAVASCRIPT_KEY;
-console.log('javascriptKey:' + javascriptKey);
 
 for ( var i = 0; i < appIds.length; i++ ) {
   var appId = appIds[i];
   var masterKey = masterKeys[i];
+  var jsKey = jsKeys[i];
   var serverURL = serverURLs[i];
   var appName = appNames[i];
 
   var this_app = {
     "appId": appId || '',
     "masterKey": masterKey || '',
-    "serverURL": serverURL || '',
-    "javascriptKey": javascriptKey || '',
+    "javascriptKey": jsKey || '',
+    "serverURL": serverURL || '',    
     "appName": appName || ''
   };
 
