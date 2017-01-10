@@ -10,11 +10,16 @@ var masterKeys = [];
 var serverURLs = [];
 var appNames = [];
 
+var javascriptKey;
+
 var re = /\s*;\s*/;
 appIds = process.env.APP_ID_List.split(re);
 masterKeys = process.env.MASTER_KEY_List.split(re);
 serverURLs = process.env.SERVER_URL_List.split(re);
 appNames = process.env.APP_NAME_List.split(re);
+
+javascriptKey = process.env.JAVASCRIPT_KEY;
+console.log('javascriptKey:' + javascriptKey);
 
 for ( var i = 0; i < appIds.length; i++ ) {
   var appId = appIds[i];
@@ -26,6 +31,7 @@ for ( var i = 0; i < appIds.length; i++ ) {
     "appId": appId || '',
     "masterKey": masterKey || '',
     "serverURL": serverURL || '',
+    "javascriptKey": javascriptKey || '',
     "appName": appName || ''
   };
 
